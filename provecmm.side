@@ -1,0 +1,11 @@
+provecmm.c
+provecmm.cogc
+dummy.cogc
+>compiler=C
+>memtype=cmm main ram compact
+>optimize=-O0
+>-m32bit-doubles
+>-fno-exceptions
+>defs::-std=c99
+>-ltiny
+>BOARD::ACTIVITYBOARD

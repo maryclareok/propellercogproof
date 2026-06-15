@@ -1,0 +1,382 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(thread.o)
+                              c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o (__TLS)
+c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(memset.o)
+                              c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o (_memset)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+hub              0x00000000         0x00008000
+cog              0x00000000         0x000007c0
+coguser          0x00000000         0x000007c0
+ram              0x20000000         0x10000000
+rom              0x30000000         0x10000000
+drivers          0xc0000000         0x00100000
+dummy            0xe0000000         0x00100000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
+LOAD cmm/provecmm.cog
+LOAD cmm/dummy.cog
+LOAD C:\Users\maryc\AppData\Local\Temp\ccWeHIQN.o
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libtiny.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/Utility/libsimpletools/cmm/\libsimpletools.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/TextDevices/libsimpletext/cmm/\libsimpletext.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/Protocol/libsimplei2c/cmm/\libsimplei2c.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libtiny.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libtiny.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/Utility/libsimpletools/cmm/\libsimpletools.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/TextDevices/libsimpletext/cmm/\libsimpletext.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/Protocol/libsimplei2c/cmm/\libsimplei2c.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libtiny.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/Utility/libsimpletools/cmm/\libsimpletools.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/TextDevices/libsimpletext/cmm/\libsimpletext.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libtiny.a
+LOAD C:/Users/maryc/Documents/SimpleIDE/Learn/Simple Libraries/Utility/libsimpletools/cmm/\libsimpletools.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libtiny.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles\libgcc.a
+START GROUP
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles\libgcc.a
+END GROUP
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles\libgcc.a
+LOAD c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+
+.boot           0x00000000       0x20
+ *(.boot)
+ .boot          0x00000000       0x20 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
+                0x00000000                __clkfreq
+                0x00000004                __clkmode
+                0x00000008                __sys_mbox
+
+.lmmkernel      0x00000000      0x764 load address 0x00000020
+ *(.lmmkernel)
+ .lmmkernel     0x00000000      0x760 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
+                0x00000000                r0
+                0x00000000                __LMM_entry
+                0x00000004                r1
+                0x00000008                r2
+                0x0000000c                r3
+                0x00000010                r4
+                0x00000014                r5
+                0x00000018                r6
+                0x0000001c                r7
+                0x00000020                r8
+                0x00000024                r9
+                0x00000028                r10
+                0x0000002c                r11
+                0x00000030                r12
+                0x00000034                r13
+                0x00000038                r14
+                0x0000003c                lr
+                0x00000040                sp
+                0x00000044                pc
+                0x00000048                __MASK_FFFFFFFF
+                0x0000004c                __TMP0
+                0x00000440                __LMM_CALL
+                0x00000448                __LMM_CALL_INDIRECT
+                0x00000454                __LMM_JMP
+                0x00000460                __LMM_PUSHM
+                0x00000480                __LMM_PUSHM_ret
+                0x00000488                __LMM_POPRET
+                0x00000490                __LMM_POPRET_ret
+                0x00000494                __LMM_POPM
+                0x000004b4                __LMM_POPM_ret
+                0x000004b8                __MASK_0000FFFF
+                0x000004cc                __CLZSI
+                0x000004d0                __CTZSI
+                0x00000508                __CLZSI_ret
+                0x00000514                __UDIVSI
+                0x00000558                __UDIVSI_ret
+                0x00000560                __DIVSI
+                0x00000588                __DIVSI_ret
+                0x00000598                __MULSI
+                0x000005b8                __MULSI_ret
+                0x000005bc                __C_LOCK_PTR
+                0x000005c0                __CMPSWAPSI
+                0x000005e0                __CMPSWAPSI_ret
+                0x000005ec                __LMM_RET
+                0x00000660                __LMM_FCACHE_START
+ *(.kernel)
+ .kernel        0x00000760        0x4 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(thread.o)
+                0x00000760                __TLS
+
+.init           0x00000784       0x74
+ *(.init*)
+ .init          0x00000784       0x60 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
+                0x00000784                start
+                0x00000784                entry
+                0x000007ab                ___init
+ .init          0x000007e4       0x14 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+
+.text           0x000007f8      0x1b4
+ *(.text*)
+ .text          0x000007f8        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
+ .text          0x000007f8        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
+ .text          0x000007f8        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
+ .text          0x000007f8      0x114 C:\Users\maryc\AppData\Local\Temp\ccWeHIQN.o
+                0x000007f8                _main
+ .text          0x0000090c        0x4 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(thread.o)
+ .text          0x00000910       0x9c c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(memset.o)
+                0x00000910                _memset
+ .text          0x000009ac        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+                0x000009ac                _etext = .
+
+provecmm.cog    0x00000000       0xc4 load address 0x000009ac
+ provecmm.cog   0x00000000       0xc4 cmm/provecmm.cog
+                0x0000003c                _main_ret
+
+dummy.cog       0x00000000       0x98 load address 0x00000a70
+ dummy.cog      0x00000000       0x98 cmm/dummy.cog
+
+.fini           0x00000b08       0x30
+ *(.fini*)
+ .fini          0x00000b08       0x1c c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
+                0x00000b08                _exit
+ .fini          0x00000b24       0x14 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+                0x00000b26                __Exit
+                0x00000b26                __exit
+                0x00000b32                __ExitHook
+
+.hub            0x00000b38        0x8
+ *(.hubstart)
+ *(.hubtext*)
+ *(.hubdata*)
+ *(.hub)
+ *(.data)
+ .data          0x00000b38        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
+ .data          0x00000b38        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
+ .data          0x00000b38        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
+ .data          0x00000b38        0x0 cmm/provecmm.cog
+ .data          0x00000b38        0x0 cmm/dummy.cog
+ .data          0x00000b38        0x0 C:\Users\maryc\AppData\Local\Temp\ccWeHIQN.o
+ .data          0x00000b38        0x4 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(thread.o)
+                0x00000b38                ___yield_ptr
+ .data          0x00000b3c        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(memset.o)
+ .data          0x00000b3c        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00000b3c                PROVIDE (__C_LOCK, .)
+                0x00000b3c        0x4 LONG 0x0
+
+.ctors          0x00000b40        0x4
+ *(.ctors*)
+ .ctors         0x00000b40        0x4 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+                0x00000b40                __argv
+                0x00000b40                __environ
+
+.dtors          0x00000b44        0x4
+ *(.dtors*)
+ .dtors         0x00000b44        0x4 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+
+.data           0x00000b48        0x0
+                0x00000b48                . = ALIGN (0x4)
+
+.bss            0x00000b48      0x2d0
+                0x00000b48                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00000b48        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/spinboot.o
+ .bss           0x00000b48        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crt0.o
+ .bss           0x00000b48        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtbegin.o
+ .bss           0x00000b48        0x0 cmm/provecmm.cog
+ .bss           0x00000b48        0x0 cmm/dummy.cog
+ .bss           0x00000b48      0x228 C:\Users\maryc\AppData\Local\Temp\ccWeHIQN.o
+ .bss           0x00000d70       0xa8 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(thread.o)
+                0x00000d70                ___napuntil_ptr
+ .bss           0x00000e18        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/../../../../propeller-elf/lib/cmm/short-doubles\libc.a(memset.o)
+ .bss           0x00000e18        0x0 c:/program files (x86)/simpleide/propeller-gcc/bin/../lib/gcc/propeller-elf/4.6.1/cmm/short-doubles/_crtend.o
+ *(.bss*)
+ *(COMMON)
+                0x00000e18                PROVIDE (__bss_end, .)
+
+.hub_heap       0x00000e18        0x4
+                0x00000e1c                . = (. + 0x4)
+ *fill*         0x00000e18        0x4 00
+                0x00000e18                ___hub_heap_start = ADDR (.hub_heap)
+
+.drivers
+ *(.drivers)
+                0x00000020                __load_start_kernel = LOADADDR (.lmmkernel)
+                0x00000b40                ___CTOR_LIST__ = ADDR (.ctors)
+                0x00000b44                ___DTOR_LIST__ = ADDR (.dtors)
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo .zdebug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames .zdebug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges .zdebug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames .zdebug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.* .zdebug_info)
+
+.debug_abbrev
+ *(.debug_abbrev .zdebug_abbrev)
+
+.debug_line
+ *(.debug_line .zdebug_line)
+
+.debug_frame
+ *(.debug_frame .zdebug_frame)
+
+.debug_str
+ *(.debug_str .zdebug_str)
+
+.debug_loc
+ *(.debug_loc .zdebug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo .zdebug_macinfo)
+                0x000007c0                PROVIDE (par, PAR)
+                0x000007c4                PROVIDE (cnt, CNT)
+                0x000007c8                PROVIDE (ina, INA)
+                0x000007cc                PROVIDE (inb, INB)
+                0x000007d0                PROVIDE (outa, OUTA)
+                0x000007d4                PROVIDE (outb, OUTB)
+                0x000007d8                PROVIDE (dira, DIRA)
+                0x000007dc                PROVIDE (dirb, DIRB)
+                0x000007e0                PROVIDE (ctra, CTRA)
+                0x000007e4                PROVIDE (ctrb, CTRB)
+                0x000007e8                PROVIDE (frqa, FRQA)
+                0x000007ec                PROVIDE (frqb, FRQB)
+                0x000007f0                PROVIDE (phsa, PHSA)
+                0x000007f4                PROVIDE (phsb, PHSB)
+                0x000007f8                PROVIDE (vcfg, VCFG)
+                0x000007fc                PROVIDE (vscl, VSCL)
+                0x00000e28                PROVIDE (__hub_end, (ADDR (.hub_heap) + 0x10))
+                0x00008000                PROVIDE (__stack_end, 0x8000)
+OUTPUT(/provecmm.elf elf32-propeller)
+                0x000009ac                PROVIDE (__load_start_provecmm_cog, LOADADDR (provecmm.cog))
+                0x00000a70                PROVIDE (__load_stop_provecmm_cog, (LOADADDR (provecmm.cog) + SIZEOF (provecmm.cog)))
+                0x00000a70                PROVIDE (__load_start_dummy_cog, LOADADDR (dummy.cog))
+                0x00000b08                PROVIDE (__load_stop_dummy_cog, (LOADADDR (dummy.cog) + SIZEOF (dummy.cog)))
